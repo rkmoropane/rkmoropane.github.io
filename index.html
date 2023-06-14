@@ -6,6 +6,7 @@
         <meta name="viewport" content="witdth-device-width, initial-scale=1.0">
         <title>Personal Website - Kholofelo Moropane</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2841fdbd9e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -14,10 +15,9 @@
                     <img src="images/Kholo-logos_white.png" class="logo">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></l i>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">My Skills</a></li>
-                        <li><a href="#">My Contacts</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
                 <div class="header-text">
@@ -49,42 +49,57 @@
                                     <li><span>Data Engineering</span><br>Designing, building, and maintaining data infrastructure and pipelines.</li>
                                     <li><span>Web development</span><br>Web App Development.<br></li>
                                     <li><span>What I use:</span><br>
-                                    <div  class="technology-used">
-                                        <ul>
-                                            <li>Python,</li>
-                                            <li>SQL,</li>
-                                            <li>Javascript,</li>
-                                            <li>CSS,</li>
-                                            <li>HTML,</li>
-                                            <li>C++</li>
-                                        </ul>
-                                    </div>
+                                            <ul>
+                                                <li>Python,</li>
+                                                <li>SQL,</li>
+                                                <li>Javascript,</li>
+                                                <li>CSS,</li>
+                                                <li>HTML,</li>
+                                                <li>C++</li>
+                                            </ul></li>
                                 </ul>
                             </div>
-                            <div class="tab-contents">
+                            <div class="tab-contents" id="education">
                                 <ul>
                                     <li><span>March/2021 - Current</span><br>Bsc Computing at University of South Africa.<br></li>
                                     <li><span>Nov/2022 - Current</span><br>Data Engineering Learner at Umuzi Academy.</li>
                                 </ul>
                             </div>
-                            <div class="tab-contents">
+                            <div class="tab-contents" id="experience">
                                 <ul>
-                                    <li><span>April/2023 - Current</span><br>Data Engineering Recruit at Umuzi Academy.</li>
+                                    <li><span>April/2023 - Current</span><br>Junior Data Engineer at Umuzi Academy.</li>
                                     <li><span>Technologies used at Umuzi:</span><br>
-                                        <div  class="Umuzi-technology-used">
                                             <ul>
                                                 <li>Python,</li>
                                                 <li>SQL,</li>
                                                 <li>CSS,</li>
                                                 <li>HTML,</li>
-                                                <li>C++</li>
-                                            </ul>
-                                        </div>
+                                                <li>Javascript,</li>
+                                                <li>git</li>
+                                            </ul></li>
+                                    
                                 </ul>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
     </body>
 </html>

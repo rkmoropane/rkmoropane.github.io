@@ -150,13 +150,13 @@ nav ul li a:hover::after{
     font-size: 18px; 
 }
 
-.technology-used ul li{
+.tab-contents ul li ul li{
     list-style: circle;
     list-style-position: inside;
     margin: 5px 2px;
 }
 
-.Umuzi-technology-used ul li{
+.tab-contents ul li ul li{
     list-style: circle;
     list-style-position: inside;
     margin: 5px 2px;
