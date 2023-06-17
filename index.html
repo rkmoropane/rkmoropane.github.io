@@ -13,12 +13,14 @@
             <div class="container">
                 <nav>
                     <img src="images/Kholo-logos_white.png" class="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Junior Data Engineer</p>
@@ -35,10 +37,7 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About me</h1>
-                        <p class="career-choice">I choose Data Engineering as my career path because I have a passion for working with data infrastructure, 
-                            solving technical challenges, and contributing to data-driven decision-making. The combination of technical 
-                            expertise, continuous learning, and the potential for making a meaningful impact in various industries makes 
-                            data engineering an exciting and fulfilling choice for me.</p>
+                        <p class="career-choice">I am currently doing a Data Engineering learnership at the Umuzi Academy in Johannesburg. I choose to pursue Data Engineering as my career path because I have a passion for working with data infrastructure, solving technical challenges, and contributing to data-driven decision-making. The combination of technical expertise, continuous learning, and the potential for making a meaningful impact in various industries makes data engineering an exciting and fulfilling choice for me. </p>
                             <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="opentab('my skills')">My Skills</p>
                                 <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -61,22 +60,23 @@
                             </div>
                             <div class="tab-contents" id="education">
                                 <ul>
-                                    <li><span>March/2021 - Current</span><br>Bsc Computing at University of South Africa.<br></li>
-                                    <li><span>Nov/2022 - Current</span><br>Data Engineering Learner at Umuzi Academy.</li>
+                                    <li><span>March 2021 - Current</span><br>Bsc Computing at University of South Africa.<br></li>
+                                    <li><span>Nov 2022 - Current</span><br>Data Engineering Learner at Umuzi Academy.</li>
                                 </ul>
                             </div>
                             <div class="tab-contents" id="experience">
                                 <ul>
-                                    <li><span>April/2023 - Current</span><br>Junior Data Engineer at Umuzi Academy.</li>
+                                    <li><span>April/2023 - Current</span><br><h4>Junior Data Engineer at Umuzi Academy.</h4>
+                                        <p>I've worked on the team that did psychometric analysis on the current applicant test items to see whether items successfully identify programming and statistics aptitude and people who can be placed. Decreased applicant screening time by 80%. Learnt to use Agile, Git, OOP, unit testing and Human centered design thinking.</p>
+                                    </li>
                                     <li><span>Relevant Coursework:</span><br>
                                             <ul>
-                                                <li>Database Development,</li>
-                                                <li>Test-driven development,</li>
+                                                <li>Agile and Database Development,</li>
+                                                <li>Test-driven development and unit testing,</li>
                                                 <li>Python,</li>
                                                 <li>OOP,</li>
                                                 <li>API Basics,</li>
-                                                <li>Version control,</li>
-                                                <li>Version control,</li>
+                                                <li>Version control</li>
                                             </ul></li>
                                 </ul>
                             </div>
@@ -84,18 +84,33 @@
                 </div>
             </div>
         </div>
-        <!-- ----------------portfolio----------------- -->
-        <div id="portfolio">
+        <!-- ----------contact------------- -->
+        <div id="contact">
             <div class="container">
-                <h1 class="sub-titile">My Projects</h1>
-                <div class="project-list">
-                    <div class="level-0-coding-challenges">
-                        <img src="images/challenges.jpg">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i><span>kholofelomoropane04@gmail.com</span></p>
+                        <p><i class="fa-solid fa-square-phone"></i><span>+27676736472</span></p>
+                         <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/kholofelo-moropane-6b798212a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/rkmoropane" target="_blank"><i class="fa-brands fa-github"></i></a>
+                         </div>
+                         <a href="docs/my-cv-umuzi1.pdf" class="btn btn2">Download CV</a>
                     </div>
-                    <div class="personal-website">
-                        <img src="images/challenges.jpg">
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">submit</button>
+                        </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © kholo. My personal website<i class="fa-solid fa-heart"></i>.</p>
             </div>
         </div>
         
@@ -114,6 +129,34 @@
                 document.getElementById(tabname).classList.add("active-tab");
             }
         </script>
+        <script>
+            
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwsGXq_fwsZXqpjD5YNJB_UrWsz9-ypv1yQlUAa_kdpKahe1Rw0xHl7CD8nBLaUm-w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 
     </body>
 </html>
