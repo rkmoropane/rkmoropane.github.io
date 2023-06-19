@@ -9,19 +9,20 @@
         <script src="https://kit.fontawesome.com/2841fdbd9e.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <nav>
+            <img src="images/Kholo-logos_white.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Portfolio</a></li> -->
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
         <div id="header">
             <div class="container">
-                <nav>
-                    <img src="images/Kholo-logos_white.png" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <!-- <li><a href="#">Portfolio</a></li> -->
-                        <li><a href="#contact">Contacts</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
+
                 <div class="header-text">
                     <h1>Junior Data Engineer</h1>
                      <p>Hi, I am <span>Kholofelo Moropane</span><br> from Tembisa</p>
@@ -124,7 +125,17 @@
                 <p>Copyright © kholo. My personal website<i class="fa-solid fa-heart"></i>.</p>
             </div>
         </div>
-        
+        <script>
+            const navbar = document.querySelector('nav');
+      
+            document.addEventListener('scroll', () => {
+              let scrollY = window.scrollY;
+      
+              if (scrollY > 100) navbar.classList.add('navfixed');
+              if (scrollY < 100) navbar.classList.remove('navfixed');
+            });
+        </script>
+
         <script>
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");

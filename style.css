@@ -12,14 +12,18 @@ html{
 body{
     background: #080808;
     color: #fff;
+    position: relative;
 }
 
 #header{
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
     background-image: url(images/background-image.jpg);
     background-size: cover;
     background-position: center;
+    padding-top: 100px;
 }
 
 .container{
@@ -27,10 +31,42 @@ body{
 }
 
 nav{
+    padding-block: 0;
     display: flex;
+    width: 100vw;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
+
+nav img{
+    width: 250px;
+    height: 250px;
+}
+.navfixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#080808;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.navfixed .logo{
+    display: none;
+    transition: 500ms ease-out;
+}
+
+.navfixed #sidemenu{
+    align-self: flex-end;
+}
+
+#sidemenu{
+    flex-basis: 40%;
+}
+
 
 .logo{
     width: 300px;
@@ -267,6 +303,9 @@ form .btn2{
 }
 
 /* -----------------css for small screen---------- */
+/* nav *{
+    outline: 5px solid red;
+} */
 nav .fas{
     display: none;
 }
@@ -276,6 +315,7 @@ nav .fas{
         flex-basis: 100%;
         background-image: url(images/altumcode-U0tBTn8UR8I-unsplash.jpg);
     }
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;
