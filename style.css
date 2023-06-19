@@ -70,8 +70,9 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 56px;
     margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 .header-text h1 span{
@@ -160,12 +161,6 @@ nav ul li a:hover::after{
     margin: 5px 2px;
 }
 
-.tab-contents ul li ul li{
-    list-style: circle;
-    list-style-position: inside;
-    margin: 5px 2px;
-}
-
 .tab-contents{
     display: none;
 }
@@ -229,6 +224,12 @@ nav ul li a:hover::after{
 .btn2.btn2{
     display: inline-block;
     background-color: #ff004f;
+}
+
+.contact-right label{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ababab;
 }
 
 .contact-right form{

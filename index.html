@@ -100,9 +100,20 @@
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" name="Name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Email:</label>
+                                <input type="email" name="Email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Message:</label>
+                                <textarea  name="Message" rows="6" required></textarea>
+                            </div>
                             <button type="submit" class="btn btn2">submit</button>
                         </form>
                         <span id="msg"></span>
