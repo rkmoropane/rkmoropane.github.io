@@ -165,7 +165,8 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-weight: 250;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
     color: #ffffffb6;
 }
 
@@ -178,6 +179,8 @@ nav ul li a:hover::after{
 .career-choice{
     font-weight: 250;
     font-size: 18px;
+    font-family: 'Times New Roman';
+    color: #ffffffb6;
 }
 
 .tab-titles{
@@ -193,7 +196,7 @@ nav ul li a:hover::after{
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -227,6 +230,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li p{
+    font-family: 'Times New Roman';
     font-weight: 250;
     font-size: 18px;
     color: #ffffffb6;
@@ -236,6 +240,7 @@ nav ul li a:hover::after{
     list-style: circle;
     list-style-position: inside;
     margin: 5px 2px;
+    font-family: 'Times New Roman';
     font-weight: 250;
     font-size: 18px;
     color: #ffffffb6;
