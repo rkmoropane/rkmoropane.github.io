@@ -67,7 +67,6 @@ nav img{
     flex-basis: 40%;
 }
 
-
 .logo{
     width: 300px;
 }
@@ -76,6 +75,9 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    font-weight: bolder;
 }
 
 nav ul li a{
@@ -105,20 +107,42 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 
-.header-text p{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 80px;
+.header-text h1{
+    font-family: 'Times New Roman';
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-right: 65px;
 }
 
-.header-text p span{
-    color: #ff004f;
+.header-text{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.header-text h1 span{
+    font-family: 'Times New Roman';
+    color: #ff0059;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-text h2 strong.highlight{
+    color: #ff8800;
 }
 
 /* ----------about------------- */
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #fff
+}
+
+.about-col-2 h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .row{
@@ -139,21 +163,32 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    font-weight: 250;
+    font-size: 18px;
+    color: #ffffffb6;
+}
 
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff
+    color: #fff;
 }
 
 .career-choice{
+    font-weight: 250;
     font-size: 18px;
-    font-weight: 200;
 }
 
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    color: #fff;
+}
+
+.tab-titles p{
+    font-size: 40px;
+    color: #fff;  
 }
 
 .tab-links{
@@ -186,15 +221,24 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
-    font-weight: 500;
+    color: #df2a2a;
+    font-weight: bolder;
     font-size: 18px; 
+}
+
+.tab-contents ul li p{
+    font-weight: 250;
+    font-size: 18px;
+    color: #ffffffb6;
 }
 
 .tab-contents ul li ul li{
     list-style: circle;
     list-style-position: inside;
     margin: 5px 2px;
+    font-weight: 250;
+    font-size: 18px;
+    color: #ffffffb6;
 }
 
 .tab-contents{
