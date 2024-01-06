@@ -1,2 +1,4 @@
-# rkmoropane.github.io
-My personal website to showcase my talents and ambitions.
+# My Portfolio
+This is my first personal website to showcase my talents and ambitions.
+
+## Link: rkmoropane.github.io
