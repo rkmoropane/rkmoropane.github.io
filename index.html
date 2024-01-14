@@ -12,10 +12,10 @@
         <nav>
             <img src="images/Kholo-logos_white.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <!-- <li><a href="#">Portfolio</a></li> -->
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PROJECTS</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -45,22 +45,22 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/User.png">
+                        <img src="images/Kholofelo-Moropane.png">
                     </div>
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
+                        <h1 class="sub-title">ABOUT ME</h1>
                         <p class="career-choice">I am currently doing a Data Engineering learnership at the Umuzi Academy in Johannesburg. I choose to pursue Data Engineering as my career path because I have a passion for working with data infrastructure, solving technical challenges, and contributing to data-driven decision-making. The combination of technical expertise, continuous learning, and the potential for making a meaningful impact in various industries makes data engineering an exciting and fulfilling choice for me. </p>
                             <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="opentab('my skills')">
-                                    <i class="fa-solid fa-tools"></i> Skills
+                                    <i class="fa-solid fa-tools"></i> SKILLS
                                 </p>
                                 
                                 <p class="tab-links" onclick="opentab('education')">
-                                    <i class="fa-solid fa-graduation-cap"></i> Education
+                                    <i class="fa-solid fa-graduation-cap"></i> EDUCATION
                                 </p>
                                 
                                 <p class="tab-links" onclick="opentab('experience')">
-                                    <i class="fa-solid fa-briefcase"></i> Experience
+                                    <i class="fa-solid fa-briefcase"></i> EXPERIENCE
                                 </p>
                             </div>
                             <div class="tab-contents active-tab" id="my skills">
@@ -68,16 +68,16 @@
                                     <li><span>Data Engineering</span><br><p>Designing, building, and maintaining data infrastructure and pipelines.</p></li>
                                     <li><span>What I use:</span>
                                             <ul>
-                                                <li class="python-icon">Python
+                                                <li class="python-icon">PYTHON
                                                     <i class="fa-brands fa-python"></i> 
                                                 </li>
                                                 <li class="sql-icon">SQL
                                                         <i class="fa-brands fa-database"></i>
                                                 </li>
-                                                <li class="css-icon">css
+                                                <li class="css-icon">CSS
                                                     <i class="fa-brands fa-css3-alt"></i>
                                                 </li>
-                                                <li class="html-icon">html
+                                                <li class="html-icon">HTML
                                                     <i class="fa-brands fa-html5"></i>
                                                 </li>
                                             </ul></li>
@@ -86,7 +86,7 @@
                             <div class="tab-contents" id="education">
                                 <ul>
                                     <li><span>March 2021 - Current</span><br><p>Bsc Computing at University of South Africa.<br>Skills: C++, Python Programming, JavaScript, SQL and Database development.</p></li>
-                                    <li><span>Nov 2022 - Current</span><br><p>Data Engineering Learner at Umuzi Academy: <br>I have learnt Python programming, Agile methodologies, Git, OOP, Test-Driven Development and Unit-Testing, and Human-centered design thinking.</p></li>
+                                    <li><span>Nov 2022 - Current</span><br><p>Data Engineering Learner at Umuzi Academy: <br>I have learnt Python programming and OOP, Test-Driven Development and Unit-Testing, Git, Agile methodologies and Human-centered design thinking.</p></li>
                                 </ul>
                             </div>
                             <div class="tab-contents" id="experience">
@@ -94,10 +94,9 @@
                                     <li><span>April 2023 - Current</span><br><p>Data Engineer Recruit at Umuzi Academy.</p></li>
                                     <li><span>Relevant CourseWork:</span>
                                             <ul>
-                                                <p><li>Database Development,</li>
-                                                    <li>Test-driven development and Unit-Testing,</li>
-                                                    <li>Python programming,</li>
-                                                    <li>OOP,</li>
+                                                <p><li>Test-driven development and Unit-Testing,</li>
+                                                    <li>Python programming and OOP,</li>
+                                                    <li>Database Development,</li>
                                                     <li>API Basics,</li>
                                                     <li>Git - Version control.</li></p>
                                             </ul></li>
@@ -107,37 +106,117 @@
                 </div>
             </div>
         </div>
+        <!------------- portfolio ---------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">MY PROJECTS</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/tdd.jpg" alt="">
+                        <div class="layer">
+                            <h3>Bank account OOP - Python<br></h3>
+                            <p>The app creates a bank and different bank accounts that calculate monthly interest earnings depending on the interest rates that were assigned to each account.</p>
+                            <a href="https://gitlab.com/learnership-projects/bank-accounts-oop-python" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/file-system.jpg" alt="">
+                        <div class="layer">
+                            <h3>Shop cart calculations file-system (I/O)<br></h3>
+                            <p>The app analyze and retrieve data from shopping cart records stored in JSON format. It calculates total spending, identifying top customers, and determining required stock for delivery.</p>
+                            <a href="https://gitlab.com/learnership-projects/shop-cart-calculations-file-systems" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/data-wrangling.jpg" alt="">
+                        <div class="layer">
+                            <h3>Data wrangling<br></h3>
+                            <p>This notebook process data, it processes rows and columns of data frames from the personality scores dataset in order to identify high-risk applicants in the departments they applied for.</p>
+                            <a href="https://gitlab.com/learnership-projects/data-wrangling" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/consuming_apis.jpg" alt="">
+                        <div class="layer">
+                            <h3>Consume GitHub API with some tests<br></h3>
+                            <p>This app retrieves a filtered list of pull requests from a specified GitHub repository. Just input the owner, repository name, start date, and end date to get PRs data.</p>
+                            <a href="https://gitlab.com/learnership-projects/consume-github-api-with-some-tests" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/sql.jpg" alt="">
+                        <div class="layer">
+                            <h3>Shop Database using sql<br></h3>
+                            <p>This project includes SQL scripts to create a shop database, define tables for customers, employees, products, orders, and payments, and insert sample records, it performs all operations done in sql from different tables.</p>
+                            <a href="https://gitlab.com/learnership-projects/shop-database-using-sql" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/database-server.jpg" alt="">
+                        <div class="layer">
+                            <h3>Database migrations with SQLAlchemy<br></h3>
+                            <p>This app uses SQLAlchemy and Alembic for managing production database. The columns are learner's attributes, and different scenarios are explored, each representing a database modification situation.</p>
+                            <a href="https://gitlab.com/learnership-projects/database-migrations-with-SQLAchemy" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/flask_apis.jpg" alt="">
+                        <div class="layer">
+                            <h3>Flask That Interact With Actual Database Python<br></h3>
+                            <p>This Flask application manages a company's computer inventory, the table name "Computer" with its properties. The API supports CRUD operations through well-named URLs and accepts and returns data in JSON format</p>
+                            <a href="https://gitlab.com/learnership-projects/create-a-rest-api-to-interact-with-actual-database-python" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/rabbitmq_broker.jpg" alt="">
+                        <div class="layer">
+                            <h3>RabbitMQ Tutorials</h3>
+                            <p>The tutorials cover topics from the first six official tutorials of the RabbitMQ documentation <br>
+                                such as message queuing, work queues, publish/subscribe, routing, topics, and RPC (Remote Procedure Call).</p>
+                            <a href="https://gitlab.com/learnership-projects/rabbitmq-first-five-tutorials" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="#portfolio" class="btn">See more</a>
+            </div>
+
+        </div>
         <!-- ----------contact------------- -->
         <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title">Get In Touch</h1>
+                        <h1 class="sub-title">GET IN TOUCH</h1>
                         <p><i class="fa-solid fa-paper-plane"></i><span>rkmoropane@gmail.com</span></p>
                         <p><i class="fa-solid fa-square-phone"></i><span>+27(067) 673 6472</span></p>
                          <div class="social-icons">
                             <a href="https://www.linkedin.com/in/kholofelo-moropane-6b798212a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/rkmoropane" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://gitlab.com/rkmoropane" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
+                            <a href="https://www.hackerrank.com/profile/rkmoropane" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+                            <a href="https://www.freecodecamp.org/kholofelo_moropane" target="_blank"><i class="fa-brands fa-freecodecamp"></i></a>
                          </div>
-                         <a href="docs/my-cv-umuzi1.pdf" class="btn btn2">Download CV</a>
+                         <a href="docs/my-cv-umuzi1.pdf" class="btn btn2">DOWNLOAD CV</a>
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
                             <div class="form-group">
-                                <label for="name">Name:</label>
+                                <label for="name">NAME:</label>
                                 <input type="text" name="Name" required>
                             </div>
                             
                             <div class="form-group">
-                                <label for="name">Email:</label>
+                                <label for="name">EMAIL:</label>
                                 <input type="email" name="Email" required>
                             </div>
                             
                             <div class="form-group">
-                                <label for="name">Message:</label>
+                                <label for="name">MESSAGE:</label>
                                 <textarea  name="Message" rows="6" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn2">submit</button>
+                            <button type="submit" class="btn btn2">SUBMIT</button>
                         </form>
                         <span id="msg"></span>
                     </div>

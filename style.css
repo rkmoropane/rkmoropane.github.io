@@ -20,7 +20,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(images/background-image.jpg);
+    background-image: url(images/pexels-sora-shimazaki-5926397.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 100px;
@@ -76,14 +76,14 @@ nav ul li{
     list-style: none;
     margin: 10px 20px;
     font-family: 'Times New Roman';
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 22px;
     position: relative;
 }
 
@@ -135,14 +135,15 @@ nav ul li a:hover::after{
 
 /* ----------about------------- */
 #about{
-    padding: 90px 0;
-    color: #fff
+    padding: 10px 50px 10px 50px;
+    color: #fff;
+    background-color: #262626;
 }
 
 .about-col-2 h1{
     font-size: 50px;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .row{
@@ -157,7 +158,7 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .about-col-2{
@@ -165,7 +166,7 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-weight: 250;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Times New Roman';
     color: #ffffffb6;
 }
@@ -196,7 +197,7 @@ nav ul li a:hover::after{
 
 .tab-links{
     margin-right: 50px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -220,19 +221,19 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .tab-contents ul li span{
     color: #df2a2a;
     font-weight: bolder;
-    font-size: 15px; 
+    font-size: 20px; 
 }
 
 .tab-contents ul li p{
     font-family: 'Times New Roman';
     font-weight: 250;
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffffb6;
 }
 
@@ -242,7 +243,7 @@ nav ul li a:hover::after{
     margin: 5px 2px;
     font-family: 'Times New Roman';
     font-weight: 250;
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffffb6;
 }
 
@@ -253,7 +254,82 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/* ----------potfolio----------- */
+#portfolio{
+    padding: 10px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hiden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
 
+.btn:hover{
+    background: #ff004f;
+}
 /* ----------contact----------- */
 .contact-left{
     flex-basis: 35%;
@@ -269,7 +345,7 @@ nav ul li a:hover::after{
 
 .contact-left p i{
     color: #ff004f;
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 25px;
 }
 
@@ -280,7 +356,7 @@ nav ul li a:hover::after{
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    margin-right: 15px;
+    margin-right: 20px;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
@@ -312,7 +388,7 @@ nav ul li a:hover::after{
 }
 
 .contact-right label{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     color: #ababab;
 }
@@ -326,16 +402,16 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #262626;
-    padding: 15px;
-    margin: 15px 0;
+    padding: 20px;
+    margin: 20px 0;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 6px;
 }
 
 form .btn2{
     padding: 14px;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px;
     cursor: pointer;
 }
